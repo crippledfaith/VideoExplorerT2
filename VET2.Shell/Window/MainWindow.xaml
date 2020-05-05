@@ -12,5 +12,24 @@
 
                       WindowTransitionsEnabled="False"
                       WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="29"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="_New" Command="{Binding NewCommand}" />
+                <MenuItem Header="_Open" Command="{Binding OpenCommand}" />
+                <Separator />
+                <MenuItem Header="_Exit" Command="{Binding ExitCommand}"/>
+            </MenuItem>
+        </Menu>
+        <StatusBar Grid.Row="2" >
+            <TextBlock Text="asdasd"></TextBlock>
+        </StatusBar>
 
+
+    </Grid>
 </Controls:MetroWindow>

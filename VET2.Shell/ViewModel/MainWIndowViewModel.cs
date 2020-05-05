@@ -6,5 +6,6 @@ namespace VET2.Shell.ViewModel
 {
     public class MainWindowViewModel
     {
+
     }
 }
